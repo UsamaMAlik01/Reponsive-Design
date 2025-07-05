@@ -6,7 +6,7 @@ function SideElem({ icon, text, active, onClick }) {
   return (
     <div
       onClick={onClick}
-      className={`relative w-full xl:h-[73px] h-[53px] flex lg:justify-between justify-center items-center lg:px-4 
+      className={`relative w-full lg:h-[36px] h-[53px] flex lg:justify-between justify-center items-center lg:px-4 
         cursor-pointer transition-all duration-200
         ${active ? "bg-[#3e3f4b]" : "hover:bg-[#4a4b57]"}`}
     >
@@ -16,14 +16,14 @@ function SideElem({ icon, text, active, onClick }) {
       )}
 
       {/* Icon and Text */}
-      <div className="flex gap-2 xl:gap-4 items-center">
+      <div className="flex gap-2 lg:gap-2 items-center">
         <div>{icon}</div>
-        <div className="hidden lg:block text-[#FFFFFF] xl:text-2xl">{text}</div>
+        <div className="hidden lg:block text-[#FFFFFF] lg:text-sm">{text}</div>
       </div>
 
       {/* Chevron Icon */}
       <div className="hidden lg:block">
-        <ChevronRight className="xl:w-[36px] xl:h-[36px] h-[24px] w-[24px]" color="#FFFFFF" />
+        <ChevronRight className="lg:w-[18px] lg:h-[18px] h-[24px] w-[24px]" color="#FFFFFF" />
       </div>
     </div>
   );

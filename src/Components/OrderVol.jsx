@@ -28,17 +28,17 @@ function OrderVol() {
       {/* Header */}
       <div className="flex justify-between items-start mb-4">
         <div>
-          <h2 className="text-sm lg:text-4xl font-bold">Order Volume</h2>
+          <h2 className="text-sm lg:text-2xl font-bold">Order Volume</h2>
           <div className="flex items-center gap-2">
-            <h1 className="text-lg lg:text-4xl font-bold">5.51K</h1>
-            <span className=" flex items-center gap-1 text-[8px] lg:text-xl">
-              <ArrowUp className="w-2 h-2 lg:h-8 lg:w-8" />
+            <h1 className="text-lg lg:text- font-bold">5.51K</h1>
+            <span className="flex items-center gap-1 text-[8px] lg:text-sm">
+              <ArrowUp className="w-2 h-2 lg:h-4 lg:w-4 text-green-500" />
               2.1%
             </span>
-            <p className="text-gray-400 text-[8px] lg:text-xl">vs Last Week</p>
+            <p className="text-gray-400 text-[8px] lg:text-sm">vs Last Week</p>
           </div>
         </div>
-        <p className="text-gray-400 text-[8px] lg:text-2xl font-medium cursor-pointer">
+        <p className="text-gray-400 text-[8px] lg:text-sm font-medium cursor-pointer">
           View Report ▼
         </p>
       </div>
@@ -58,13 +58,13 @@ function OrderVol() {
       </div>
 
       {/* Custom Legends */}
-      <div className="flex justify-center gap-4 lg:gap-20 mt-2 text-[8px] md:text-[10px] lg:text-2xl lg:mt-10">
+     <div className="flex justify-center gap-4 lg:gap-10 mt-2 text-[8px] md:text-[10px] lg:text-xl lg:mt-[4px]">
         <div className="flex items-center gap-1">
-          <span className="md:w-2 md:h-2 lg:w-5 lg:h-5 bg-[#7F56D9] rounded-full"></span>
+          <span className="md:w-2 md:h-2 lg:w-[10px] lg:h-[10px] bg-[#7F56D9] rounded-full"></span>
           <span className="text-gray-600">This Week</span>
         </div>
         <div className="flex items-center gap-1">
-          <span className="md:w-2 md:h-2 lg:w-5 lg:h-5 bg-[#FACC15] rounded-full"></span>
+          <span className="md:w-2 md:h-2 lg:w-[10px] lg:h-[10px] bg-[#FACC15] rounded-full"></span>
           <span className="text-gray-600">Last Week</span>
         </div>
       </div>

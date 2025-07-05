@@ -3,7 +3,6 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 const rating = 1.3;
 const maxScore = 5;
-
 const percentage = (rating / maxScore) * 100;
 
 const data = [
@@ -18,11 +17,11 @@ function Demo() {
 
   return (
     <div className="bg-white p-4 rounded-xl shadow-md text-around">
-      <h2 className="font-semibold text-xs lg:text-2xl">Your Rating</h2>
-      <p className="lg:text-3xl text-xs font-bold my-1">{rating}</p>
+      <h2 className="font-semibold text-xs lg:text-base">Your Rating</h2>
+      <p className="lg:text-lg text-xs font-bold my-1">{rating}</p>
 
       {/* === Relative wrapper for chart and needle === */}
-      <div className="relative w-full h-[100px] md:h-[140px] lg:h-[350px] xl:mt-[0px] md:mt-[-55px] mt-[30px] ">
+      <div className="relative w-full h-[100px] md:h-[140px] lg:h-[175px] md:mt-[-55px] mt-[30px]">
         {/* Chart */}
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
@@ -60,12 +59,12 @@ function Demo() {
       </div>
 
       {/* Bottom stats */}
-      <div className=" lg:mt-37 md:mt-6 mt-8">
-        <p className="text-gray-500 font-semibold lg:text-2xl lg:mt-12 md:text-[8px] text-sm">
+      <div className="lg:mt-3 md:mt-6 mt-8">
+        <p className="text-gray-500 font-semibold lg:text-base lg:mt-20 md:text-[8px] text-sm">
           Canceling - Seller Related:{" "}
           <span className="text-red-500 font-bold">6%</span>
         </p>
-        <p className=" md:mt-2 text-gray-500 md:text-[8px] lg:text-2xl text-sm">
+        <p className="md:mt-2 text-gray-500 md:text-[8px] lg:text-base text-sm">
           Handling Time With SLA:{" "}
           <span className="text-red-500 font-bold">18%</span>
         </p>

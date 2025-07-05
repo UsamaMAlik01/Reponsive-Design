@@ -25,23 +25,23 @@ function SalesSummaryChart() {
       {/* Header */}
       <div className="flex justify-between items-start mb-4">
         <div>
-          <h2 className="text-sm lg:text-4xl font-bold">Sales Summary</h2>
+          <h2 className="text-sm lg:text-2xl font-bold">Sales Summary</h2>
           <div className="flex items-center gap-2">
-            <h1 className="text-lg lg:text-4xl font-bold">3K</h1>
-            <span className="text-red-500 flex items-center gap-1 text-[8px] lg:text-xl">
-              <ArrowDown className="w-2 h-2 lg:h-8 lg:w-8" />
+            <h1 className="text-lg lg:text-2xl font-bold">3K</h1>
+            <span className="text-red-500 flex items-center gap-1 text-[8px] lg:text-sm">
+              <ArrowDown className="w-2 h-2 lg:h-4 lg:w-4" />
               2.1%
             </span>
-            <p className="text-gray-400 text-[8px] lg:text-xl">vs Last Week</p>
+            <p className="text-gray-400 text-[8px] lg:text-sm">vs Last Week</p>
           </div>
         </div>
-        <p className="text-gray-400 text-[8px] lg:text-2xl font-medium cursor-pointer">
+        <p className="text-gray-400 text-[8px] lg:text-xs font-medium cursor-pointer">
           View Report ▼
         </p>
       </div>
 
       {/* Chart */}
-      <div className="h-[150px] md:h-[250px] md:ml-[-30px] lg:mt-30 lg:ml-[-20px]">
+      <div className="h-[150px] md:h-[250px] md:ml-[-30px] lg:mt-[6px] lg:ml-[-25px]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -65,13 +65,13 @@ function SalesSummaryChart() {
       </div>
 
       {/* Custom Legends */}
-      <div className="flex justify-center gap-4 lg:gap-20 mt-2 text-[8px] md:text-[10px] lg:text-2xl lg:mt-20">
-        <div className="flex items-center gap-1 ">
-          <span className="md:w-2 md:h-2 lg:w-5 lg:h-5 bg-[#7F56D9] rounded-full"></span>
+      <div className="flex justify-center gap-4 lg:gap-10 mt-2 text-[8px] md:text-[10px] lg:text-xl lg:mt-[4px]">
+        <div className="flex items-center gap-1">
+          <span className="md:w-2 md:h-2 lg:w-[10px] lg:h-[10px] bg-[#7F56D9] rounded-full"></span>
           <span className="text-gray-600">This Week</span>
         </div>
         <div className="flex items-center gap-1">
-          <span className="md:w-2 md:h-2 lg:w-5 lg:h-5 bg-[#FACC15] rounded-full"></span>
+          <span className="md:w-2 md:h-2 lg:w-[10px] lg:h-[10px] bg-[#FACC15] rounded-full"></span>
           <span className="text-gray-600">Last Week</span>
         </div>
       </div>

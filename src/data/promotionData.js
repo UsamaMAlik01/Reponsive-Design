@@ -30,8 +30,8 @@ export const promotionData = [
       Products: 0,
     },
     dealStatus: [
-      { label: "Approved deals", value: 1, color: "green-400" },
-      { label: "Approved deals", value: "-", color: "orange-400" },
+      { label: "Approved deals", value: 1, color: "green-600" },
+      { label: "Approved deals", value: "-", color: "orange-600" },
       { label: "Approved deals", value: "-", color: "red-600" },
     ],
   },

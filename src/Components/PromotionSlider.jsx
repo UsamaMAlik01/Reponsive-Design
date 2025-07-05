@@ -47,11 +47,11 @@ function PromotionSlider() {
       </div>
 
       {/* Dots */}
-      <div className="flex justify-center gap-2 ">
+      <div className="flex justify-center gap-2 mt-2">
         {[...Array(TOTAL)].map((_, i) => (
           <span
             key={i}
-            className={`w-2 h-2 rounded-full transition-all ${
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
               i === activeIndex ? "bg-black" : "bg-gray-600"
             }`}
           ></span>
