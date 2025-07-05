@@ -35,7 +35,7 @@ function PromotionBox({ promotionId = 1 }) {
         {/* Main Content */}
         <div className='relative row-span-4 grid grid-cols-2 h-full'>
           <img
-            className='rounded-xl blur-[2px] h-[130px] sm:h-[150px] md:h-[150px] lg:h-[142px] '
+            className='rounded-xl blur-[2px] h-[130px] sm:h-[150px] md:h-[150px] lg:h-[142px] w-full '
             src={promotion.image}
             alt="promotion img"
           />

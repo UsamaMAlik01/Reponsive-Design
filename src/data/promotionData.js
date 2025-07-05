@@ -6,7 +6,7 @@ export const promotionData = [
     heading: "[Lifestyle] 3.3 PAYDAY 2022",
     subheading: "15% off min spend SGD 100",
     code: "HOME10",
-    image: "src/assets/promotion.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHuJ3Kd7YE2pTBHhmYxzvdOOuHFSepihsDLw&s",
     details: [
       {
         icon: "CalendarClock",
@@ -40,7 +40,7 @@ export const promotionData = [
     heading: "[CRM Campaign] Sports 30% + 10% CB",
     subheading: "(TGIF30)",
     code: "TGIF30",
-    image: "src/assets/promotion.jpg", // You can change this image path
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHuJ3Kd7YE2pTBHhmYxzvdOOuHFSepihsDLw&s", // You can change this image path
     details: [
       {
         icon: "CalendarClock",
